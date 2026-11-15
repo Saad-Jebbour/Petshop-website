@@ -1,113 +1,113 @@
 # 🐾 PetShop - Your Pet's Favorite Place
 
-Bienvenue sur le projet **PetShop**, une plateforme e-commerce moderne dédiée aux animaux de compagnie (chiens, chats, oiseaux, poissons et rongeurs). Ce site web propose une sélection complète de nourriture, jouets, accessoires et soins pour le bien-être de vos compagnons.
+Welcome to **PetShop**, a modern e-commerce platform dedicated to pets (dogs, cats, birds, fish, and rodents). This website offers a comprehensive catalog of pet food, toys, accessories, and healthcare products to ensure the well-being of your companion animals.
 
 ---
 
-## 🌟 Fonctionnalités
+## 🌟 Features
 
-- **Accueil interactif** : Bannières dynamiques, catégories d'animaux, produits phares et loader personnalisé.
-- **Boutiques par catégorie d'animaux** :
-  - 🐶 [Chiens](html/chiens.html)
-  - 🐱 [Chats](html/chats.html)
-  - 🦜 [Oiseaux](html/oiseaux.html)
-  - 🐟 [Poissons](html/poissons.html)
-  - 🐹 [Rongeurs](html/rongeurs.html)
-- **Gestion du panier d'achat** :
-  - Ajout et suppression de produits.
-  - Calcul dynamique du total.
-  - Persistance locale via `localStorage`.
-- **Tunnel de commande** :
-  - Page de récapitulatif du panier.
-  - Page de paiement et validation.
-- **Espace utilisateur** :
-  - Pages de connexion (`login.html`) et d'inscription (`signup.html`).
-- **Thème Sombre / Clair (Dark Mode)** : Changement de thème avec adaptation visuelle globale.
-- **Design Responsive** : Optimisé pour ordinateurs, tablettes et smartphones.
-- **Page À Propos & Contact** : Présentation de l'équipe et formulaire de contact.
+- **Interactive Homepage**: Dynamic hero banners, pet category navigation, featured products, and an animated preloader.
+- **Product Categories by Pet**:
+  - 🐶 [Dogs](html/chiens.html)
+  - 🐱 [Cats](html/chats.html)
+  - 🦜 [Birds](html/oiseaux.html)
+  - 🐟 [Fish](html/poissons.html)
+  - 🐹 [Rodents](html/rongeurs.html)
+- **Shopping Cart Management**:
+  - Add and remove items dynamically.
+  - Real-time cart total calculation.
+  - Persistent state saved via `localStorage`.
+- **Checkout Process**:
+  - Cart review summary page.
+  - Checkout & payment validation page.
+- **User Authentication**:
+  - Sign In (`login.html`) and Sign Up (`signup.html`) pages with form validation.
+- **Dark / Light Mode**: Seamless theme switching with consistent UI styling across pages.
+- **Responsive Design**: Fully optimized for mobile phones, tablets, and desktop screens.
+- **About Us & Contact Pages**: Team presentation and customer inquiry contact form.
 
 ---
 
-## 📁 Structure du Projet
+## 📁 Project Structure
 
 ```text
 Pethsop-website/
-├── index.html              # Point d'entrée principal (redirection vers html/index.html)
-├── .gitignore              # Fichiers et dossiers ignorés par Git
-├── README.md               # Documentation du projet
+├── index.html              # Main entry point (redirects to html/index.html)
+├── .gitignore              # Files and directories ignored by Git
+├── README.md               # Project documentation
 │
-├── css/                    # Feuilles de styles CSS
-│   ├── apropos.css         # Styles de la page À propos
-│   ├── contactus.css       # Styles de la page Contact
-│   ├── loader.css          # Animation du préchargeur de page
-│   ├── login.css           # Styles de la page Connexion
-│   ├── modesombre.css      # Thème sombre
-│   ├── pages.css           # Styles principaux et communs
-│   ├── paiement.css        # Styles de la page de paiement
-│   ├── panier.css          # Styles du panier
-│   ├── responsive.css      # Règles pour l'affichage mobile/tablette
-│   └── signup.css          # Styles de la page d'inscription
+├── css/                    # Stylesheets
+│   ├── apropos.css         # About page styles
+│   ├── contactus.css       # Contact page styles
+│   ├── loader.css          # Page preloader animation
+│   ├── login.css           # Login page styling
+│   ├── modesombre.css      # Dark mode styles
+│   ├── pages.css           # Global and shared component styles
+│   ├── paiement.css        # Checkout and payment styles
+│   ├── panier.css          # Shopping cart styles
+│   ├── responsive.css      # Mobile and tablet media queries
+│   └── signup.css          # Registration page styling
 │
-├── html/                   # Pages du site web
-│   ├── index.html          # Page d'accueil
-│   ├── apropos.html        # Page À propos / Présentation de l'équipe
-│   ├── contact.html        # Page Contact
-│   ├── chiens.html         # Produits Chiens
-│   ├── chats.html          # Produits Chats
-│   ├── oiseaux.html        # Produits Oiseaux
-│   ├── poissons.html       # Produits Poissons
-│   ├── rongeurs.html       # Produits Rongeurs
-│   ├── panier.html         # Panier d'achat
-│   ├── paiment.html        # Processus de paiement
-│   ├── login.html          # Connexion
-│   └── signup.html         # Inscription
+├── html/                   # HTML pages
+│   ├── index.html          # Homepage
+│   ├── apropos.html        # About us / Team presentation
+│   ├── contact.html        # Contact page
+│   ├── chiens.html         # Dog products
+│   ├── chats.html          # Cat products
+│   ├── oiseaux.html        # Bird products
+│   ├── poissons.html       # Fish products
+│   ├── rongeurs.html       # Rodent products
+│   ├── panier.html         # Shopping cart
+│   ├── paiment.html        # Payment and checkout
+│   ├── login.html          # User login
+│   └── signup.html         # User registration
 │
-├── js/                     # Scripts JavaScript
-│   ├── card.js             # Gestion des cartes produits
-│   ├── footerFIX.js        # Gestion du composant pied de page
-│   ├── header.js           # Gestion de la barre de navigation
-│   ├── headerFIX.js        # Navigation et synchronisation
-│   ├── homepage.js         # Animations et logique de la page d'accueil
-│   ├── loader.js           # Gestion du préchargeur
-│   ├── login.js            # Validation du formulaire de connexion
-│   ├── plp.js              # Logique des listes de produits (filtres, panier)
-│   ├── signup.js           # Validation du formulaire d'inscription
-│   └── theme.js            # Basculement mode sombre / clair
+├── js/                     # JavaScript files
+│   ├── card.js             # Product card interactions
+│   ├── footerFIX.js        # Reusable footer component
+│   ├── header.js           # Header navigation handling
+│   ├── headerFIX.js        # Navigation bar logic and state sync
+│   ├── homepage.js         # Homepage animations and logic
+│   ├── loader.js           # Page preloader controller
+│   ├── login.js            # Login form validation
+│   ├── plp.js              # Product Listing Page logic (filtering, cart actions)
+│   ├── signup.js           # Sign up form validation
+│   └── theme.js            # Dark/light theme toggler
 │
-└── images/                 # Ressources graphiques (photos produits, bannières, icônes)
-    └── team images/        # Photos de l'équipe (ignoré par Git)
+└── images/                 # Graphical assets (products, banners, icons)
+    └── team images/        # Team member photos (ignored by Git)
 ```
 
 ---
 
-## 🛠️ Technologies Utilisées
+## 🛠️ Built With
 
-- **HTML5** : Structuration sémantique des pages.
-- **CSS3** : Design moderne, Flexbox, CSS Grid, animations et Media Queries pour le responsive.
-- **JavaScript (Vanilla)** : Manipulation du DOM, gestion du panier (`localStorage`), animations, gestion des thèmes.
-- **Ionicons & Google Fonts** : Typographie Poppins et bibliothèque d'icônes.
+- **HTML5**: Semantic and accessible page structure.
+- **CSS3**: Modern layout using Flexbox, CSS Grid, custom animations, and responsive media queries.
+- **Vanilla JavaScript**: DOM manipulation, dynamic cart calculation, `localStorage` persistence, and theme toggling.
+- **Ionicons & Google Fonts**: Poppins font family and vector icon sets.
 
 ---
 
-## 🚀 Installation et Lancement
+## 🚀 Getting Started
 
-Ce projet est un site web statique qui ne nécessite aucun serveur applicatif ou base de données complexe pour être visualisé.
+This is a static front-end web project, so no backend setup or database installation is required.
 
-1. **Cloner le dépôt :**
+1. **Clone the repository:**
    ```bash
-   git clone https://github.com/votre-nom-dutilisateur/Pethsop-website.git
+   git clone https://github.com/your-username/Pethsop-website.git
    cd Pethsop-website
    ```
 
-2. **Lancer le site :**
-   - Ouvrez simplement `index.html` dans votre navigateur préféré (Chrome, Firefox, Edge, Safari).
-   - *Optionnel* : Vous pouvez également utiliser l'extension **Live Server** sur Visual Studio Code pour un rafraîchissement automatique lors des modifications.
+2. **Open the project:**
+   - Double-click `index.html` to open it in your default web browser (Chrome, Edge, Firefox, Safari).
+   - *(Recommended)* Open the folder in **Visual Studio Code** and use the **Live Server** extension for live reloading.
 
 ---
 
-## 👥 Équipe de Développement
+## 👥 Development Team
 
-Ce projet a été réalisé par :
+This project was built by:
 
 - **Meryem Bahoum**
 - **Hajar Amzoirou**
@@ -117,7 +117,6 @@ Ce projet a été réalisé par :
 
 ---
 
-## 📄 Licence
+## 📄 License
 
-Ce projet est réalisé dans le cadre d'un projet d'études. Tous droits réservés.
-
+This project was developed for educational purposes. All rights reserved.
