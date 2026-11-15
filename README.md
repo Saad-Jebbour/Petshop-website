@@ -75,7 +75,6 @@ Pethsop-website/
 │   └── theme.js            # Basculement mode sombre / clair
 │
 └── images/                 # Ressources graphiques (photos produits, bannières, icônes)
-    └── team images/        # Photos de l'équipe (ignoré par Git)
 ```
 
 ---
