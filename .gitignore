@@ -1,0 +1,12 @@
+# Team images
+team images/
+images/team images/
+
+# Operating System files
+.DS_Store
+Thumbs.db
+
+# Editor directories
+.vscode/
+.idea/
+
