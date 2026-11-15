@@ -95,8 +95,8 @@ This is a static front-end web project, so no backend setup or database installa
 
 1. **Clone the repository:**
    ```bash
-   git clone https://github.com/your-username/Pethsop-website.git
-   cd Pethsop-website
+   git clone https://github.com/your-username/Petshop-website.git
+   cd Petshop-website
    ```
 
 2. **Open the project:**
